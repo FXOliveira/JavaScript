@@ -1,0 +1,30 @@
+function Troca(vet,pos){
+	
+	var aux = vet[pos];
+	vet[pos] = vet[pos+1];
+	vet[pos+1] = aux;
+
+}
+
+function BubbleSort(vet){
+
+	let final = vet.length - 1;
+
+	while (final>=1) {
+
+		for (let i = 0; i < final; i++) {
+
+			if (vet[i]>vet[i+1]){
+			Troca(vet,i);
+			}else {
+				continue;                     
+				}
+
+		}
+
+		final = final - 1; 
+	}
+
+}	                               
+                                                       
+	
